@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Component Demo | Bake + Brew</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .demo-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #f7f5f2;
+    }
+    .demo-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .demo-section h2 {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 1rem;
+      color: #1f1f1f;
+    }
+    .demo-section p {
+      font-family: 'Poppins', sans-serif;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .usage-code {
+      background: #1f1f1f;
+      color: #f2c230;
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.9rem;
+      overflow-x: auto;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-container">
+    <!-- Logo Display -->
+    <div class="demo-section">
+      <h2>Logo Component — Full Display</h2>
+      <p>This is the Bake + Brew logo component as it would appear on the website. The design replicates the real signage style with a dark grey background, bold white typography, and yellow accent color.</p>
+      
+      <!-- Logo Component -->
+      <div class="logo">
+        <div class="logo__main">
+          <span class="logo__text">BAKE</span>
+          <span class="logo__plus">+</span>
+          <span class="logo__text">BREW</span>
+        </div>
+        <div class="logo__divider"></div>
+        <div class="logo__subtitle">PASTRIES + COFFEE</div>
+      </div>
+    </div>
+
+    <!-- Usage Instructions -->
+    <div class="demo-section">
+      <h2>Usage</h2>
+      <p>To use this logo component in your HTML, simply include the following markup:</p>
+      <div class="usage-code">&lt;div class="logo"&gt;
+  &lt;div class="logo__main"&gt;
+    &lt;span class="logo__text"&gt;BAKE&lt;/span&gt;
+    &lt;span class="logo__plus"&gt;+&lt;/span&gt;
+    &lt;span class="logo__text"&gt;BREW&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="logo__divider"&gt;&lt;/div&gt;
+  &lt;div class="logo__subtitle"&gt;PASTRIES + COFFEE&lt;/div&gt;
+&lt;/div&gt;</div>
+    </div>
+
+    <!-- Design Specifications -->
+    <div class="demo-section">
+      <h2>Design Specifications</h2>
+      <ul style="font-family: 'Poppins', sans-serif; color: #333; line-height: 1.8;">
+        <li><strong>Background:</strong> Dark grey (#3a3a3a)</li>
+        <li><strong>Main Text:</strong> White (#ffffff), bold uppercase, wide letter spacing</li>
+        <li><strong>Plus Sign:</strong> Yellow (#f2c230), slightly heavier weight</li>
+        <li><strong>Divider Line:</strong> Yellow (#f2c230), 3px height</li>
+        <li><strong>Subtitle:</strong> White (#ffffff), small uppercase, extra wide letter spacing</li>
+        <li><strong>Responsive:</strong> Uses clamp() for fluid typography scaling</li>
+      </ul>
+    </div>
+
+    <!-- Responsive Preview -->
+    <div class="demo-section">
+      <h2>Responsive Behavior</h2>
+      <p>The logo automatically scales for different screen sizes:</p>
+      
+      <h3 style="font-family: 'Poppins', sans-serif; margin: 2rem 0 1rem; font-size: 1.1rem;">Desktop (Large)</h3>
+      <div class="logo">
+        <div class="logo__main">
+          <span class="logo__text">BAKE</span>
+          <span class="logo__plus">+</span>
+          <span class="logo__text">BREW</span>
+        </div>
+        <div class="logo__divider"></div>
+        <div class="logo__subtitle">PASTRIES + COFFEE</div>
+      </div>
+
+      <h3 style="font-family: 'Poppins', sans-serif; margin: 2rem 0 1rem; font-size: 1.1rem;">Tablet/Mobile (Small Container)</h3>
+      <div style="max-width: 400px; margin: 0 auto;">
+        <div class="logo">
+          <div class="logo__main">
+            <span class="logo__text">BAKE</span>
+            <span class="logo__plus">+</span>
+            <span class="logo__text">BREW</span>
+          </div>
+          <div class="logo__divider"></div>
+          <div class="logo__subtitle">PASTRIES + COFFEE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component File -->
+    <div class="demo-section">
+      <h2>Reusable Component File</h2>
+      <p>The logo is also available as a standalone component file at:</p>
+      <div class="usage-code">components/logo.html</div>
+      <p style="margin-top: 1rem;">You can load it dynamically using JavaScript fetch (similar to how navbar and footer are loaded).</p>
+    </div>
+  </div>
+</body>
+</html>

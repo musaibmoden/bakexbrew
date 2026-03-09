@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Bake + Brew | Fresh HALAL Bakery in Wembley — Near Wembley Stadium</title>
+  <meta name="description" content="Bake + Brew is your local bakery in Wembley serving fresh HALAL pasties, jacket potatoes, sausage rolls, sandwiches, paninis, and freshly brewed coffee near Wembley Stadium." />
+  <meta name="keywords" content="Wembley café, HALAL bakery, coffee shop, Wembley Stadium, Market Square, jacket potatoes, paninis, lattes, matcha" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bake + Brew — Fresh HALAL Bakery & Coffee in Wembley" />
+  <meta property="og:description" content="Fresh HALAL pasties, jacket potatoes & coffee. Visit us at Market Square, Wembley — just outside Wembley Stadium." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-coffee.jpg" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR  (loaded from component)
+       ═══════════════════════════════════════ -->
+  <div id="navbar"></div>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <header class="hero" role="banner">
+    <!-- Background image with dark overlay -->
+    <div class="hero__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80"
+           alt="" class="hero__bg-img" />
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <span class="hero__badge">Est. 2019 · Wembley, London</span>
+      <h1 class="hero__brand">Bake <em>+</em> Brew</h1>
+      <p class="hero__tagline">Fresh HALAL Bakery. Exceptional Coffee.</p>
+      <p class="hero__sub">
+        Your local bakery in Wembley serving fresh HALAL pasties, jacket potatoes, sausage rolls, sandwiches, paninis, and freshly brewed coffee. Located just outside Wembley Stadium — perfect before any event!
+      </p>
+      <div class="hero__cta">
+        <a href="menu.html" class="btn btn--primary btn--lg">View Menu</a>
+        <a href="about.html" class="btn btn--outline btn--lg">Our Story</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       FEATURED ITEMS
+       ═══════════════════════════════════════ -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Our Favourites</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">
+          The crowd-pleasers — hand-picked from our menu, crafted fresh every day.
+        </p>
+      </div>
+
+      <div class="featured-grid">
+
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"
+                 alt="Flat white coffee in a ceramic cup" class="card__image" loading="lazy" />
+            <span class="card__tag">Coffee</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Flat White</h4>
+            <p class="card__text">Velvety steamed milk over a double ristretto — our signature cup.</p>
+            <div class="card__footer">
+              <span class="card__price">£3.80</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&q=80"
+                 alt="Freshly baked croissant on a plate" class="card__image" loading="lazy" />
+            <span class="card__tag">Pastry</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Butter Croissant</h4>
+            <p class="card__text">Flaky, golden, and baked in-house every morning from French butter dough.</p>
+            <div class="card__footer">
+              <span class="card__price">£3.20</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1534687941927-d9756c39be01?w=600&q=80"
+                 alt="Avocado toast on sourdough" class="card__image" loading="lazy" />
+            <span class="card__tag">Breakfast</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Avo Sourdough</h4>
+            <p class="card__text">Smashed avocado, chilli flakes, poached egg on house-made sourdough.</p>
+            <div class="card__footer">
+              <span class="card__price">£8.50</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80"
+                 alt="Matcha latte in a glass" class="card__image" loading="lazy" />
+            <span class="card__tag">Specialty</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Ceremonial Matcha</h4>
+            <p class="card__text">Premium Japanese matcha whisked with oat milk — earthy and smooth.</p>
+            <div class="card__footer">
+              <span class="card__price">£4.50</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=600&q=80"
+                 alt="Cinnamon roll with icing" class="card__image" loading="lazy" />
+            <span class="card__tag">Pastry</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Cinnamon Scroll</h4>
+            <p class="card__text">Soft brioche dough swirled with cinnamon and topped with cream-cheese glaze.</p>
+            <div class="card__footer">
+              <span class="card__price">£4.00</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=600&q=80"
+                 alt="Cold brew coffee in a glass" class="card__image" loading="lazy" />
+            <span class="card__tag">Coffee</span>
+          </div>
+          <div class="card__body">
+            <h4 class="card__title">Cold Brew</h4>
+            <p class="card__text">Slow-steeped for 18 hours — bold, smooth, and served over ice.</p>
+            <div class="card__footer">
+              <span class="card__price">£4.20</span>
+              <a href="menu.html" class="card__action">View Menu →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BRAND LOGO
+       ═══════════════════════════════════════ -->
+  <section class="section" id="brand-logo" style="display: flex; align-items: center; justify-content: center; padding: 3rem 1rem;">
+    <div id="logo-component" style="text-align: center;"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT PREVIEW
+       ═══════════════════════════════════════ -->
+  <section class="section section--alt" id="about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80"
+               alt="Inside Bake + Brew café showing warm interior" loading="lazy" />
+        </div>
+        <div class="about-content reveal">
+          <h2>Our Story</h2>
+          <div class="divider" style="margin-left:0;"></div>
+          <p>
+            Bake + Brew is your local bakery in Wembley, serving fresh HALAL pasties, jacket potatoes (SPUDs), sausage rolls, slices, fresh sandwiches, paninis, a variety of confectionery items, and freshly brewed coffee. We also offer hot & iced lattes and matcha.
+          </p>
+          <p>
+            Located just outside Wembley Stadium on Market Square, we're the perfect spot to visit before an event at the stadium or the OVO Arena. We're open on all event days and rated #1 in Wembley on TripAdvisor!
+          </p>
+          <a href="about.html" class="btn btn--secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       GALLERY
+       ═══════════════════════════════════════ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Gallery</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">Moments from the café — food, drinks, and the space in between.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Item 1 — tall -->
+        <figure class="gallery-item gallery-item--tall reveal">
+          <img src="images/1.webp"
+               alt="Bake + Brew gallery image 1" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="gallery-item__label">Bake + Brew</span>
+            <span class="gallery-item__sub">Wembley</span>
+          </figcaption>
+        </figure>
+
+        <!-- Item 2 -->
+        <figure class="gallery-item reveal">
+          <img src="images/2.webp"
+               alt="Bake + Brew gallery image 2" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="gallery-item__label">Fresh Food</span>
+            <span class="gallery-item__sub">Daily</span>
+          </figcaption>
+        </figure>
+
+        <!-- Item 3 -->
+        <figure class="gallery-item reveal">
+          <img src="images/3.webp"
+               alt="Bake + Brew gallery image 3" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="gallery-item__label">Our Menu</span>
+            <span class="gallery-item__sub">Delicious</span>
+          </figcaption>
+        </figure>
+
+        <!-- Item 4 — wide -->
+        <figure class="gallery-item gallery-item--wide reveal">
+          <img src="images/4.webp"
+               alt="Bake + Brew gallery image 4" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="gallery-item__label">Quality</span>
+            <span class="gallery-item__sub">HALAL</span>
+          </figcaption>
+        </figure>
+
+        <!-- Item 5 -->
+        <figure class="gallery-item reveal">
+          <img src="images/5.webp"
+               alt="Bake + Brew gallery image 5" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="gallery-item__label">Fresh Coffee</span>
+            <span class="gallery-item__sub">Brewed</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       OPENING HOURS
+       ═══════════════════════════════════════ -->
+  <section class="section section--alt" id="hours">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Opening Hours</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">We're open every day of the week. Pop in anytime.</p>
+      </div>
+
+      <div class="hours-card reveal">
+        <div class="hours-card__row">
+          <span class="hours-card__day">Monday</span>
+          <span class="hours-card__time">7:30 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Tuesday</span>
+          <span class="hours-card__time">7:30 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Wednesday</span>
+          <span class="hours-card__time">7:30 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Thursday</span>
+          <span class="hours-card__time">7:30 AM – 7:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Friday</span>
+          <span class="hours-card__time">7:30 AM – 11:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Saturday</span>
+          <span class="hours-card__time">8:00 AM – 11:00 PM</span>
+        </div>
+        <div class="hours-card__row">
+          <span class="hours-card__day">Sunday</span>
+          <span class="hours-card__time">8:00 AM – 10:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       LOCATION / MAP
+       ═══════════════════════════════════════ -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Find Us</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">Engineers Way, Wembley Park, HA9 0FJ — just outside Wembley Stadium. Perfect stop before events!</p>
+      </div>
+
+      <div class="map-wrapper reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.5!2d-0.2808831!3d51.5587721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876118f40ba0137%3A0x60a77295e0b5c6e1!2sBake%20%2B%20Brew!5e0!3m2!1sen!2suk!4v1709900000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bake + Brew location on Google Maps"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT PREVIEW
+       ═══════════════════════════════════════ -->
+  <section class="section section--dark" id="contact-preview">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Get In Touch</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">Questions, catering, or just want to say hi? We'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-preview reveal">
+        <div class="contact-preview__item">
+          <div class="contact-preview__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <span>+44 20 3411 1780</span>
+        </div>
+
+        <div class="contact-preview__item">
+          <div class="contact-preview__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span>hello@bakeandbrew.co.uk</span>
+        </div>
+
+        <div class="contact-preview__item">
+          <div class="contact-preview__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <span>@bakeandbrew</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: var(--space-2xl);" class="reveal">
+        <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER  (loaded from component)
+       ═══════════════════════════════════════ -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

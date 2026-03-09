@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Contact | Bake + Brew — Get In Touch</title>
+  <meta name="description" content="Contact Bake + Brew — drop us a message, give us a call, or visit us at Market Square, Wembley, just outside Wembley Stadium." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+       ═══════════════════════════════════════ -->
+  <header class="page-hero"
+          style="background: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80') center/cover no-repeat;">
+    <div>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you.</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ── Contact Form ─────────────────── -->
+        <div class="reveal">
+          <h2 style="margin-bottom: var(--space-sm);">Send a Message</h2>
+          <div class="divider" style="margin-left:0;"></div>
+          <p style="margin-bottom: var(--space-xl); color: var(--clr-dark-grey);">
+            Got a question about catering, private events, or just want to say hi?
+            Fill in the form and we'll get back to you within 24 hours.
+          </p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="e.g. Jane Smith"
+                     required autocomplete="name" aria-required="true" />
+              <p class="error-message" id="nameError">Please enter your name.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="e.g. jane@example.com"
+                     required autocomplete="email" aria-required="true" />
+              <p class="error-message" id="emailError">Please enter a valid email address.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="Write your message here…"
+                        required aria-required="true"></textarea>
+              <p class="error-message" id="messageError">Please enter a message.</p>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
+              Send Message
+            </button>
+          </form>
+
+          <!-- Success state (hidden by default) -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon" aria-hidden="true">✅</div>
+            <h3>Message Sent!</h3>
+            <p style="color: var(--clr-dark-grey);">
+              Thanks for reaching out — we'll get back to you shortly.
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Contact Info ─────────────────── -->
+        <div class="contact-info reveal">
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>The Kiosk, Brent Civic Centre<br>Engineers Way, Wembley Park<br>Wembley HA9 0FJ</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+442034111780">+44 20 3411 1780</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@bakeandbrew.co.uk">hello@bakeandbrew.co.uk</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon–Thu: 7:30 AM – 7 PM<br>Fri–Sat: 7:30 AM – 11 PM<br>Sun: 8 AM – 10 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div>
+              <h4>Follow Us</h4>
+              <p><a href="#">@bakeandbrew</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MAP
+       ═══════════════════════════════════════ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2>Find Us</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="map-wrapper reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.5!2d-0.2808831!3d51.5587721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876118f40ba0137%3A0x60a77295e0b5c6e1!2sBake%20%2B%20Brew!5e0!3m2!1sen!2suk!4v1709900000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bake + Brew location on Google Maps"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

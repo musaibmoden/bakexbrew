@@ -1,0 +1,48 @@
+<!-- ============================================
+     BAKE + BREW — Navbar Component
+     Loaded via JS into #navbar containers.
+     ============================================ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar__inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="navbar__logo" aria-label="Bake + Brew — Home">
+      <!-- Coffee-bean icon -->
+      <svg class="navbar__logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+        <line x1="6" y1="1" x2="6" y2="4"/>
+        <line x1="10" y1="1" x2="10" y2="4"/>
+        <line x1="14" y1="1" x2="14" y2="4"/>
+      </svg>
+      <span class="navbar__logo-text">Bake <em>+</em> Brew</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="navbar__links" role="menubar">
+      <li><a href="index.html" role="menuitem">Home</a></li>
+      <li><a href="menu.html" role="menuitem">Menu</a></li>
+      <li><a href="about.html" role="menuitem">About</a></li>
+      <li><a href="contact.html" role="menuitem">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger toggle (mobile) -->
+    <button class="hamburger" id="hamburgerBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-menu__link" style="--i:0">Home</a>
+  <a href="menu.html" class="mobile-menu__link" style="--i:1">Menu</a>
+  <a href="about.html" class="mobile-menu__link" style="--i:2">About</a>
+  <a href="contact.html" class="mobile-menu__link" style="--i:3">Contact</a>
+  <div class="mobile-menu__brand">Bake <em>+</em> Brew</div>
+</div>
