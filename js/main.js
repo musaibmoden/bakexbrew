@@ -30,7 +30,6 @@ async function loadComponents() {
   const components = [
     { id: 'navbar', path: 'components/navbar.html' },
     { id: 'footer', path: 'components/footer.html' },
-    { id: 'logo-component', path: 'components/logo.html' },
   ];
 
   await Promise.all(
