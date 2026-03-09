@@ -526,7 +526,7 @@ p {
   font-style: normal;
   color: var(--clr-accent);
   display: inline-block;
-  animation: plusRotate 4s ease-in-out infinite;
+  animation: plusRotate 5s ease-in-out 1 forwards;
 }
 
 /* Tagline */
@@ -598,8 +598,9 @@ p {
 }
 
 @keyframes plusRotate {
-  0%, 100% { transform: rotate(0deg); }
-  50%      { transform: rotate(360deg); }
+  0%   { transform: rotate(0deg); }
+  70%  { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* ──────────────────────────────────────────
