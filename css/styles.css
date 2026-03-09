@@ -1147,10 +1147,14 @@ p {
 /* Menu filter tabs */
 .menu-tabs {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: var(--space-xs);
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: var(--space-2xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  padding-bottom: var(--space-2xs);
 }
 
 .menu-tab {
@@ -1161,6 +1165,9 @@ p {
   border: 2px solid var(--clr-light-grey);
   color: var(--clr-text);
   transition: all var(--transition-fast);
+  flex: 0 0 auto;
+  white-space: nowrap;
+  scroll-snap-align: start;
 }
 
 .menu-tab:hover,
@@ -1168,6 +1175,15 @@ p {
   background: var(--clr-secondary);
   color: var(--clr-white);
   border-color: var(--clr-secondary);
+}
+
+.menu-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+
+.menu-tabs::-webkit-scrollbar-thumb {
+  background: var(--clr-light-grey);
+  border-radius: var(--border-radius-pill);
 }
 
 /* ──────────────────────────────────────────
@@ -1571,6 +1587,14 @@ p {
    21. RESPONSIVE — DESKTOP  (≥ 900px)
    ────────────────────────────────────────── */
 @media (min-width: 900px) {
+  .menu-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+  }
+
   .navbar__links {
     display: flex;
   }
