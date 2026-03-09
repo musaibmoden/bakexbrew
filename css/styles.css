@@ -308,6 +308,23 @@ p {
   width: 100%;
 }
 
+.navbar__links a.navbar__order-btn {
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--border-radius-pill);
+}
+
+.navbar__links a.navbar__order-btn::after {
+  display: none;
+}
+
+.navbar__links a.navbar__order-btn:hover {
+  color: var(--clr-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ── Hamburger ───────────────────────────── */
 .hamburger {
   display: flex;
@@ -413,6 +430,22 @@ p {
 
 .mobile-menu__link:hover::after {
   width: 60%;
+}
+
+.mobile-menu__order-btn {
+  margin-top: var(--space-sm);
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--border-radius-pill);
+}
+
+.mobile-menu__order-btn::after {
+  display: none;
+}
+
+.mobile-menu__order-btn:hover {
+  color: var(--clr-primary);
 }
 
 /* Small brand mark at the bottom of the overlay */
